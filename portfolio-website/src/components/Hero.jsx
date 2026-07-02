@@ -121,7 +121,7 @@ const Hero = () => {
               <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-primary/50">
                 {/* Replace with actual profile image */}
                 <img
-                  src="https://via.placeholder.com/400x400/FF7A00/ffffff?text=AK"
+                  src="/profile.jpeg"
                   alt="Venkata Abhilash Kommana"
                   className="w-full h-full object-cover"
                 />
