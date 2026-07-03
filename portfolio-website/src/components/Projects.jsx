@@ -11,18 +11,18 @@ const Projects = () => {
 
   const projects = [
     {
-      title: 'Movie Recommendation System',
-      description: 'Built a movie recommendation web application using machine learning techniques and content-based filtering to suggest movies based on user preferences.',
-      icon: FaFilm,
-      technologies: ['Python', 'Machine Learning', 'Streamlit', 'TMDB API'],
+      title: 'ChainSol',
+      description: 'Turning global market chaos into clear enterprise clarity. A Fabric IQ reasoning agent that maps geopolitical disruption data directly to your product lines in real time.',
+      icon: FaStock,
+      technologies: ['Python', 'Pandas', 'Streamlit', 'Markdown'],
       github: 'https://github.com/Abhilash-42',
       color: '#FF6B6B',
     },
     {
-      title: 'Stock Price Prediction',
-      description: 'Developed a stock price prediction system using Long Short-Term Memory (LSTM) neural networks for time-series forecasting.',
-      icon: FaChartLine,
-      technologies: ['Python', 'TensorFlow', 'Pandas', 'NumPy', 'LSTM'],
+      title: 'Smart Student Management',
+      description: 'A Student Academic & Attendance Management System developed using Python, Flask, and MongoDB. This project helps manage student academic records, marks, attendance, and performance analytics through a simple web dashboard interface.',
+      icon: FaSchool,
+      technologies: ['Python', 'Flask', 'MongoDB', 'ReportLab', 'FE:HTML,CSS,JavaScript'],
       github: 'https://github.com/Abhilash-42',
       color: '#4ECDC4',
     },
