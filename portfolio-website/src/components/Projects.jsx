@@ -13,7 +13,7 @@ const Projects = () => {
     {
       title: 'ChainSol',
       description: 'Turning global market chaos into clear enterprise clarity. A Fabric IQ reasoning agent that maps geopolitical disruption data directly to your product lines in real time.',
-      icon: FaStock,
+      icon: FaAiOutlineStock,
       technologies: ['Python', 'Pandas', 'Streamlit', 'Markdown'],
       github: 'https://github.com/Abhilash-42',
       color: '#FF6B6B',
