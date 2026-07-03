@@ -36,7 +36,7 @@ const Skills = () => {
       skills: [
         { name: 'Git & GitHub', icon: SiGithub, color: '#F7DF1E' },
         { name: 'VS Code', icon: SiVisualstudiocode, color: '#007ACC' },
-        { name: 'Google Colab', icon: SiGithub, color: '#F9AB00' },
+        { name: 'Google Colab', icon: SiGoogle, color: '#F9AB00' },
         { name: 'Power BI', icon: SiPowerbi, color: '#F2C811' },
         { name: 'n8n', icon: FaRobot, color: '#FF6B6B' },
       ],
