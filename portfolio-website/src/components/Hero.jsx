@@ -6,7 +6,7 @@ const Hero = () => {
   const handleDownloadResume = () => {
     // Replace with actual resume file path
     const link = document.createElement('a')
-    link.href = '/Abhi resume.pdf'
+    link.href = '/Abhi_resume1.pdf'
     link.download = 'Venkata_Abhilash_Kommana_Resume.pdf'
     link.click()
   }
