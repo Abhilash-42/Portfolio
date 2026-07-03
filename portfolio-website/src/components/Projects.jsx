@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { FiGithub, FiExternalLink } from 'react-icons/fi'
-import { FaAiOutlineStock, FaSchool, FaRobot } from 'react-icons/fa'
+import { FaChartLine, FaSchool, FaRobot } from 'react-icons/fa'
 
 const Projects = () => {
   const [ref, inView] = useInView({
@@ -13,7 +13,7 @@ const Projects = () => {
     {
       title: 'ChainSol',
       description: 'Turning global market chaos into clear enterprise clarity. A Fabric IQ reasoning agent that maps geopolitical disruption data directly to your product lines in real time.',
-      icon: FaAiOutlineStock,
+      icon:  FaChartLine,
       technologies: ['Python', 'Pandas', 'Streamlit', 'Markdown'],
       github: 'https://github.com/Abhilash-42',
       color: '#FF6B6B',
