@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { FiGithub, FiExternalLink } from 'react-icons/fi'
-import { FaFilm, FaChartLine, FaRobot } from 'react-icons/fa'
+import { FaStock, FaSchool, FaRobot } from 'react-icons/fa'
 
 const Projects = () => {
   const [ref, inView] = useInView({
