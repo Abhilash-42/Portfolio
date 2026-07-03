@@ -56,8 +56,6 @@ const Hero = () => {
                   2000,
                   'Automation Enthusiast',
                   2000,
-                  'Software Developer',
-                  2000,
                 ]}
                 wrapper="span"
                 speed={50}
