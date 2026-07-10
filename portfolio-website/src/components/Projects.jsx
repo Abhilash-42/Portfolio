@@ -23,7 +23,8 @@ const Projects = () => {
       description: 'A Student Academic & Attendance Management System developed using Python, Flask, and MongoDB. This project helps manage student academic records, marks, attendance, and performance analytics through a simple web dashboard interface.',
       icon: FaSchool,
       technologies: ['Python', 'Flask', 'MongoDB', 'ReportLab', 'FE:HTML,CSS,JavaScript'],
-      github: 'https://github.com/Abhilash-42',
+      github: 'https://github.com/Abhilash-42/Smart_Management_System',
+      live: 'https://smart-management-system-9kzi.onrender.com',
       color: '#4ECDC4',
     },
     {
@@ -31,7 +32,7 @@ const Projects = () => {
       description: 'Building workflow automations using n8n and APIs to automate repetitive tasks, notifications, and integrations.',
       icon: FaRobot,
       technologies: ['n8n', 'REST APIs', 'Automation'],
-      github: 'https://github.com/Abhilash-42',
+      github: 'https://github.com/Abhilash-42/ChainSol',
       color: '#FF7A00',
     },
   ]
