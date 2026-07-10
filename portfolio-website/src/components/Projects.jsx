@@ -95,19 +95,29 @@ const Projects = () => {
                     {tech}
                   </span>
                 ))}
-              </div>
-              
-              <a
-                href={project.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-gray-400 hover:text-primary transition-colors duration-300"
-              >
-                <FiGithub /> View on GitHub
-              </a>
-            </motion.div>
-          ))}
-        </div>
+              <div className="flex gap-4 mt-4">
+  <a
+    href={project.github}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-flex items-center gap-2 text-gray-400 hover:text-primary"
+  >
+    <FiGithub />
+    GitHub
+  </a>
+
+  {project.live && (
+    <a
+      href={project.live}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-flex items-center gap-2 text-gray-400 hover:text-primary"
+    >
+      <FiExternalLink />
+      Live Demo
+    </a>
+  )}
+</div>
       </motion.div>
     </section>
   )
