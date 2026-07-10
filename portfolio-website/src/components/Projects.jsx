@@ -12,27 +12,38 @@ const Projects = () => {
   const projects = [
     {
       title: 'ChainSol',
-      description: 'Turning global market chaos into clear enterprise clarity. A Fabric IQ reasoning agent that maps geopolitical disruption data directly to your product lines in real time.',
-      icon:  FaChartLine,
+      description:
+        'Turning global market chaos into clear enterprise clarity. A Fabric IQ reasoning agent that maps geopolitical disruption data directly to your product lines in real time.',
+      icon: FaChartLine,
       technologies: ['Python', 'Pandas', 'Streamlit', 'Markdown'],
-      github: 'https://github.com/Abhilash-42',
+      github: 'https://github.com/Abhilash-42/ChainSol',
       color: '#FF6B6B',
     },
     {
       title: 'Smart Student Management',
-      description: 'A Student Academic & Attendance Management System developed using Python, Flask, and MongoDB. This project helps manage student academic records, marks, attendance, and performance analytics through a simple web dashboard interface.',
+      description:
+        'A Student Academic & Attendance Management System developed using Python, Flask, and MongoDB. This project helps manage student academic records, marks, attendance, and performance analytics through a simple web dashboard interface.',
       icon: FaSchool,
-      technologies: ['Python', 'Flask', 'MongoDB', 'ReportLab', 'FE:HTML,CSS,JavaScript'],
+      technologies: [
+        'Python',
+        'Flask',
+        'MongoDB',
+        'ReportLab',
+        'HTML',
+        'CSS',
+        'JavaScript',
+      ],
       github: 'https://github.com/Abhilash-42/Smart_Management_System',
       live: 'https://smart-management-system-9kzi.onrender.com',
       color: '#4ECDC4',
     },
     {
       title: 'Automation Workflows',
-      description: 'Building workflow automations using n8n and APIs to automate repetitive tasks, notifications, and integrations.',
+      description:
+        'Building workflow automations using n8n and APIs to automate repetitive tasks, notifications, and integrations.',
       icon: FaRobot,
       technologies: ['n8n', 'REST APIs', 'Automation'],
-      github: 'https://github.com/Abhilash-42/ChainSol',
+      github: 'https://github.com/Abhilash-42',
       color: '#FF7A00',
     },
   ]
@@ -55,18 +66,18 @@ const Projects = () => {
   return (
     <section id="projects" className="py-20 relative">
       <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a0a] via-primary/5 to-[#0a0a0a]" />
-      
+
       <motion.div
         ref={ref}
         variants={containerVariants}
         initial="hidden"
-        animate={inView ? "visible" : "hidden"}
+        animate={inView ? 'visible' : 'hidden'}
         className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10"
       >
         <motion.h2 variants={itemVariants} className="section-title">
           My <span className="gradient-text">Projects</span>
         </motion.h2>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <motion.div
@@ -76,16 +87,19 @@ const Projects = () => {
               className="glass-card p-6 group relative overflow-hidden"
             >
               <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-primary/20 to-transparent rounded-bl-full" />
-              
+
               <div className="flex items-center gap-3 mb-4">
-                <project.icon className="text-3xl" style={{ color: project.color }} />
+                <project.icon
+                  className="text-3xl"
+                  style={{ color: project.color }}
+                />
                 <h3 className="text-xl font-semibold">{project.title}</h3>
               </div>
-              
+
               <p className="text-gray-400 mb-4 leading-relaxed">
                 {project.description}
               </p>
-              
+
               <div className="flex flex-wrap gap-2 mb-4">
                 {project.technologies.map((tech, idx) => (
                   <span
@@ -95,29 +109,34 @@ const Projects = () => {
                     {tech}
                   </span>
                 ))}
-              <div className="flex gap-4 mt-4">
-  <a
-    href={project.github}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="inline-flex items-center gap-2 text-gray-400 hover:text-primary"
-  >
-    <FiGithub />
-    GitHub
-  </a>
+              </div>
 
-  {project.live && (
-    <a
-      href={project.live}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="inline-flex items-center gap-2 text-gray-400 hover:text-primary"
-    >
-      <FiExternalLink />
-      Live Demo
-    </a>
-  )}
-</div>
+              <div className="flex gap-4 mt-4">
+                <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-gray-400 hover:text-primary transition-colors duration-300"
+                >
+                  <FiGithub />
+                  GitHub
+                </a>
+
+                {project.live && (
+                  <a
+                    href={project.live}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-gray-400 hover:text-primary transition-colors duration-300"
+                  >
+                    <FiExternalLink />
+                    Live Demo
+                  </a>
+                )}
+              </div>
+            </motion.div>
+          ))}
+        </div>
       </motion.div>
     </section>
   )
