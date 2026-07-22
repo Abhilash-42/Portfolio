@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { FaCertificate, FaAward } from 'react-icons/fa'
-import { SiOracle, SiMicrosoft, SiInfosys ,  SiApachenetbeanside  } from 'react-icons/si'
-import { VscThinking } from "react-icons/vsc"
+import { SiOracle, SiMicrosoft, SiInfosys ,  SiApachenetbeanside , SiBuildkite  } from 'react-icons/si'
+
 
 const Certifications = () => {
   const [ref, inView] = useInView({
@@ -44,7 +44,7 @@ const Certifications = () => {
      {
       title: 'Enterprise Design Thinking Practitioner',
       issuer: 'IBM SkillsBuild',
-      icon: VscThinking ,
+      icon: SiBuildkite,
       color: '#0078D4',
     },
      {
