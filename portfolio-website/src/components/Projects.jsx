@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { FiGithub, FiExternalLink } from 'react-icons/fi'
-import { FaChartLine, FaSchool, FaRobot } from 'react-icons/fa'
-
+import { FaChartLine, FaSchool, Faglobe } from 'react-icons/fa'
+import { FaPaperPlane } from "react-icons/fa6"
 const Projects = () => {
   const [ref, inView] = useInView({
     triggerOnce: true,
@@ -38,12 +38,13 @@ const Projects = () => {
       color: '#4ECDC4',
     },
     {
-      title: 'Automation Workflows',
+      title: 'IMEX',
       description:
-        'Building workflow automations using n8n and APIs to automate repetitive tasks, notifications, and integrations.',
-      icon: FaRobot,
-      technologies: ['n8n', 'REST APIs', 'Automation'],
-      github: 'https://github.com/Abhilash-42',
+        'IMEX is a real-time supply chain intelligence dashboard that tracks global risks, active disruptions, and financial exposure in one central interface.',
+      icon: FaPaperPlane,
+      technologies: ['Next.js', 'React', 'FasrAPI'],
+      github: 'https://github.com/Abhilash-42/IMEX',
+      live: 'https://imex-frontend.onrender.com/',
       color: '#FF7A00',
     },
   ]
