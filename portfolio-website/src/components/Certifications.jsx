@@ -1,7 +1,8 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { FaCertificate, FaAward } from 'react-icons/fa'
-import { SiOracle, SiMicrosoft, SiInfosys } from 'react-icons/si'
+import { SiOracle, SiMicrosoft, SiInfosys ,  SiApachenetbeanside  } from 'react-icons/si'
+import { VscThinking } from "react-icons/vsc"
 
 const Certifications = () => {
   const [ref, inView] = useInView({
@@ -38,6 +39,18 @@ const Certifications = () => {
       title: 'Programming Fundamentals using Python',
       issuer: 'Infosys Springboard',
       icon: SiInfosys,
+      color: '#0078D4',
+    },
+     {
+      title: 'Enterprise Design Thinking Practitioner',
+      issuer: 'IBM SkillsBuild',
+      icon: VscThinking ,
+      color: '#0078D4',
+    },
+     {
+      title: 'Agents League - Reasoning Agents - Digital Badge',
+      issuer: 'The Global AI Community',
+      icon:  SiApachenetbeanside  ,
       color: '#0078D4',
     },
   ]
